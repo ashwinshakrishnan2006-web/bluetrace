@@ -1,0 +1,86 @@
+{
+  "dataset": "Garcia-INPE oilspill-detection-dataset",
+  "commit": "1b9a62c30a9da9698eb470562aa976f9bd1e8fc3",
+  "split_counts": {
+    "train": 108,
+    "val": 43,
+    "test": 22
+  },
+  "source_groups": {
+    "train": [
+      "IMG_01",
+      "IMG_02",
+      "IMG_04",
+      "IMG_05",
+      "IMG_06",
+      "IMG_08",
+      "IMG_09",
+      "IMG_10",
+      "IMG_11",
+      "IMG_14",
+      "IMG_16",
+      "IMG_18",
+      "IMG_21",
+      "IMG_22",
+      "IMG_23",
+      "IMG_25"
+    ],
+    "val": [
+      "IMG_12",
+      "IMG_13",
+      "IMG_15",
+      "IMG_19"
+    ],
+    "test": [
+      "IMG_07",
+      "IMG_17",
+      "IMG_20",
+      "IMG_26"
+    ]
+  },
+  "resolution": [
+    200,
+    150
+  ],
+  "train_pixels_sampled": 85470,
+  "seed": 42,
+  "threshold": 0.7999999999999998,
+  "validation": {
+    "iou": 0.6504361221558382,
+    "precision": 0.6949510676156584,
+    "recall": 0.9103490472583183,
+    "f1": 0.7881990868040665,
+    "pixel_accuracy": 0.9869829457364341,
+    "tp": 31245,
+    "fp": 13715,
+    "fn": 3077,
+    "tn": 1241963
+  },
+  "test": {
+    "iou": 0.5326407068062827,
+    "precision": 0.5658786719972189,
+    "recall": 0.90067782542537,
+    "f1": 0.6950627168401388,
+    "pixel_accuracy": 0.9913439393939394,
+    "tp": 6511,
+    "fp": 4995,
+    "fn": 718,
+    "tn": 647776
+  },
+  "dark_baseline_test": {
+    "iou": 0.06636267329924923,
+    "precision": 0.06637796001105685,
+    "recall": 0.9965417070134182,
+    "f1": 0.12446548432519286,
+    "pixel_accuracy": 0.8464378787878788,
+    "tp": 7204,
+    "fp": 101326,
+    "fn": 25,
+    "tn": 551445
+  },
+  "test_inference_seconds_median": 0.04485066899997037,
+  "elapsed_seconds": 9.72209981200001,
+  "python": "3.12.14",
+  "sklearn": "1.8.0",
+  "scope": "Binary slick versus background at 200x150. Includes seepage. No attribution ground truth. No comparison with full-resolution published metrics."
+}

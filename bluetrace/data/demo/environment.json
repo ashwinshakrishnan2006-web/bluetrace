@@ -1,0 +1,20 @@
+{
+  "name": "Synthetic spill and fictional vessels",
+  "observation": "2026-09-18T06:40:00+00:00",
+  "bounds": {
+    "west": 81.0,
+    "east": 81.1,
+    "south": 12.47,
+    "north": 12.57
+  },
+  "current_east": 0.2,
+  "current_north": 0,
+  "wind_east": 0,
+  "wind_north": 0,
+  "windage": 0.03,
+  "uncertainty": 0.15,
+  "age_min": 1,
+  "age_max": 4,
+  "model": "dark",
+  "notes": "SYNTHETIC FIXTURE. Fictional MMSIs and constant conditions. Use only for software demonstration. Not an observed incident."
+}

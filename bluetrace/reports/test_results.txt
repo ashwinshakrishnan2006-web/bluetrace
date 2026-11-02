@@ -1,0 +1,50 @@
+test_01_invalid_image (test_project.AnalysisTests.test_01_invalid_image) ... ok
+test_02_bad_coordinates (test_project.AnalysisTests.test_02_bad_coordinates) ... ok
+test_03_nan_rejected (test_project.AnalysisTests.test_03_nan_rejected) ... ok
+test_04_timezone_required (test_project.AnalysisTests.test_04_timezone_required) ... ok
+test_05_ais_conflict (test_project.AnalysisTests.test_05_ais_conflict) ... ok
+test_06_ais_sort_and_deduplicate (test_project.AnalysisTests.test_06_ais_sort_and_deduplicate) ... ok
+test_07_interpolation_gap (test_project.AnalysisTests.test_07_interpolation_gap) ... ok
+test_08_interpolation_speed (test_project.AnalysisTests.test_08_interpolation_speed) ... ok
+test_09_interpolation_arithmetic (test_project.AnalysisTests.test_09_interpolation_arithmetic) ... ok
+test_10_metrics_arithmetic (test_project.AnalysisTests.test_10_metrics_arithmetic) ... ok
+test_11_empty_track_no_extrapolation (test_project.AnalysisTests.test_11_empty_track_no_extrapolation) ... ok
+test_12_split_integrity (test_project.AnalysisTests.test_12_split_integrity) ... ok
+test_13_checksums (test_project.AnalysisTests.test_13_checksums) ... ok
+test_14_full_workflow (test_project.HTTPTests.test_14_full_workflow) ... ok
+test_15_real_image_only (test_project.HTTPTests.test_15_real_image_only) ... ok
+test_16_cross_origin_denied (test_project.HTTPTests.test_16_cross_origin_denied) ... ok
+test_17_host_denied (test_project.HTTPTests.test_17_host_denied) ... ok
+test_18_static_delivery (test_project.HTTPTests.test_18_static_delivery) ... ok
+test_19_bad_request_no_partial_save (test_project.HTTPTests.test_19_bad_request_no_partial_save) ... ok
+test_20_busy_response (test_project.HTTPTests.test_20_busy_response) ... ok
+test_21_path_traversal_denied (test_project.HTTPTests.test_21_path_traversal_denied) ... ok
+test_22_metrics_endpoint (test_project.HTTPTests.test_22_metrics_endpoint) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 1.393s
+
+OK
+"POST /api/demo HTTP/1.1" 201 -
+"GET /api/incidents/741831c391a248c5bf29e899a6c51946 HTTP/1.1" 200 -
+"GET /api/incidents/741831c391a248c5bf29e899a6c51946/geojson HTTP/1.1" 200 -
+"GET /api/incidents/741831c391a248c5bf29e899a6c51946/report HTTP/1.1" 200 -
+"GET /api/incidents HTTP/1.1" 200 -
+"GET /assets/741831c391a248c5bf29e899a6c51946/image.png HTTP/1.1" 200 -
+"GET /assets/741831c391a248c5bf29e899a6c51946/mask.png HTTP/1.1" 200 -
+"GET /assets/741831c391a248c5bf29e899a6c51946/overlay.png HTTP/1.1" 200 -
+"POST /api/incidents/741831c391a248c5bf29e899a6c51946/delete HTTP/1.1" 200 -
+"GET /api/incidents/741831c391a248c5bf29e899a6c51946 HTTP/1.1" 404 -
+"GET /api/dataset/sample HTTP/1.1" 200 -
+"POST /api/incidents HTTP/1.1" 201 -
+"POST /api/demo HTTP/1.1" 403 -
+"GET /api/health HTTP/1.1" 403 -
+"GET / HTTP/1.1" 200 -
+"GET /app.js HTTP/1.1" 200 -
+"GET /style.css HTTP/1.1" 200 -
+"GET /api/incidents HTTP/1.1" 200 -
+"POST /api/incidents HTTP/1.1" 400 -
+"GET /api/incidents HTTP/1.1" 200 -
+"POST /api/demo HTTP/1.1" 429 -
+"GET /assets/../../server.py HTTP/1.1" 404 -
+"GET /api/metrics HTTP/1.1" 200 -
