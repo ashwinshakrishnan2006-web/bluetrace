@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: >-
+  If you use this dataset or the accompanying benchmark code, please cite it
+  using the metadata below.
+title: Oil Spill Segmentation Dataset (800x600)
+doi: 10.5281/zenodo.22214144
+type: dataset
+authors:
+  - family-names: Garcia
+    given-names: J.R.M.
+    affiliation: >-
+      Instituto Nacional de Pesquisas Espaciais (INPE), Applied Research and
+      Technology Division
+    orcid: "https://orcid.org/0000-0003-4648-0727"
+  # TODO: add remaining co-authors before publication
+repository-code: "https://github.com/Garcia-INPE/oilspill-detection-dataset"
+license: CC-BY-4.0
+version: 0.2.1
+date-released: "2026-09-12"
+keywords:
+  - oil spill detection
+  - synthetic aperture radar
+  - SAR
+  - Sentinel-1
+  - semantic segmentation
+  - remote sensing
+  - Gulf of Mexico
